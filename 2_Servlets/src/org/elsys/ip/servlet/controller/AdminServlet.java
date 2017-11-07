@@ -40,7 +40,7 @@ public class AdminServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
-		request.setAttribute("users", userService.getUsers());	
+		request.setAttribute("users", userService.getUsers());
 		getServletContext().getRequestDispatcher("/WEB-INF/admin.jsp")
 			.forward(request, response);
 	}

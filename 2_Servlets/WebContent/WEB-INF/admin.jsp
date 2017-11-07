@@ -20,6 +20,12 @@
 				<td>${user.name}</td>
 				<td>${user.email}</td>
 				<td><a href="user?name=${user.name}">Go to user page</a></td>
+				<td><button>
+					<form action = "/UserServlet" method ="POST"
+					  input type="hidden" name="name" value=${user.name}>
+					</form> Delete
+				</button></td>
+
 			</tr>
 		</c:forEach>
 	</table>
