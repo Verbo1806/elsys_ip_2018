@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="edit.js"></script>
+    <script src="search.js"></script>
+</head>
+
+<body>
+
+    <p>Дата:  <input class="input" id="date" type="text" title="Date"/> </p>
+    <p>Час:  <input class="input" id="time" type="text" title="Time"/> </p>
+    <p>Място:  <input class="input" id="venue" type="text" title="Venue"/> </p>
+    <p>Състезание:  <input class="input" id="competition" type="text" title="Competition"/> </p>
+    <p>Домакин:  <input class="input" id="homeTeam" type="text" title="Home"/> </p>
+    <p>Гост:  <input class="input" id="awayTeam" type="text" title="Away"/> </p>
+    <p>Домакин(абревиатура):  <input class="input" id="homeTeamAbbr" type="text" title="HomeAbbr"/> </p>
+    <p>Гост(абревиатура):  <input class="input" id="awayTeamAbbr" type="text" title="AwayAbbr"/> </p>
+    <p>Продължителност на полувремето:  <input class="input" id="halfLength" type="number" title="HalfLength"/> </p>
+    <p>Брой играчи:  <input class="input" id="playersNumber" type="number" title="PlayersNumber"/> </p>
+    <p>Брой резерви:  <input class="input" id="subsNumber" type="number" title="SubsNumber"/> </p>
+
+    <button id="fieldsButton" type="button" onclick="searchByFields()">Search</button>
+    <button id="allDataButton" type="button" onclick="searchAll()">All Data</button>
+
+    <table> </table>
+</body>
+
+</html>

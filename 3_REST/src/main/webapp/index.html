@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <button id="add" type="button" onclick="showAdd()">Add</button>
+    <button id="search" type="button" onclick="showSearch()">Search</button>
+    <button id="download" type="button" onclick="download()">Download</button>
+    <form action="/api/match/upload" method="post" enctype="multipart/form-data">
+
+        <p>Select a file : <input type="file" name="file" size="45" accept="text/csv" /></p>
+        <input type="submit" value="Upload CSV" />
+
+    </form>
+
+    <div id="main"></div>
+</body>
+
+</html>
